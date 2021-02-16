@@ -14,9 +14,11 @@
 	align-items: center;
 	position: fixed;
 	background-color: #a1a1a1;
+	min-height: 3em;
 	z-index: 2;
 	#header-img {
 		width: 12em;
+		background-color: #d1d1d1;
 	}
 	#nav-bar {
 		display: flex;
@@ -73,24 +75,27 @@
 		justify-content: space-around;
 		.inputs {
 			width: 20%;
+			#submit {
+				cursor: pointer;
+			}
 			input {
 				box-sizing: border-box;
 				border: none;
 				outline: 0.15em solid red;
 				height: 3em;
 				width: 100%;
-				padding: 8px;
-				margin-bottom: 20px;
+				padding: 1em;
+				margin-bottom: 2em;
 				font-weight: bold;
 				position: relative;
 				&::before {
 					content: "";
 					position: absolute;
-					height: 100%;
 					width: 100%;
+					height: 100%;
 					top: 0;
 					left: 0;
-					background: crimson;
+					background-color: rgba(0, 0, 0, 0.5);
 				}
 			}
 		}

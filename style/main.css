@@ -17,11 +17,13 @@
           align-items: center;
   position: fixed;
   background-color: #a1a1a1;
+  min-height: 3em;
   z-index: 2;
 }
 
 #header #header-img {
   width: 12em;
+  background-color: #d1d1d1;
 }
 
 #header #nav-bar {
@@ -101,6 +103,10 @@
   width: 20%;
 }
 
+.container #form .inputs #submit {
+  cursor: pointer;
+}
+
 .container #form .inputs input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -108,8 +114,8 @@
   outline: 0.15em solid red;
   height: 3em;
   width: 100%;
-  padding: 8px;
-  margin-bottom: 20px;
+  padding: 1em;
+  margin-bottom: 2em;
   font-weight: bold;
   position: relative;
 }
@@ -117,11 +123,11 @@
 .container #form .inputs input::before {
   content: "";
   position: absolute;
-  height: 100%;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  background: crimson;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container .thingi {
