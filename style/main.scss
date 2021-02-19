@@ -28,6 +28,7 @@ body {
 		display: flex;
 		width: 100%;
 		justify-content: space-around;
+		padding-left: 40em;
 		span {
 			a {
 				font-family: "Titillium Web";
@@ -46,7 +47,7 @@ body {
 					height: 2px;
 					left: 50%;
 					position: absolute;
-					background: red;
+					background: crimson;
 					transition: width 0.3s ease 0s, left 0.3s ease 0s;
 					width: 0;
 				}
@@ -55,7 +56,7 @@ body {
 					left: 0;
 				}
 				&:hover {
-					color: red;
+					color: crimson;
 				}
 			}
 		}
@@ -65,6 +66,7 @@ body {
 .container {
 	width: 100%;
 	.vid {
+		background: #ffc1ff;
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -72,6 +74,7 @@ body {
 		justify-content: space-around;
 	}
 	#form {
+		background: #f089c9;
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -92,6 +95,7 @@ body {
 				margin-bottom: 2em;
 				font-weight: bold;
 				background: transparent;
+				text-transform: uppercase;
 			}
 			span {
 				position: relative;
@@ -124,10 +128,13 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		background: #b65493;
 		.box {
 			width: 15%;
 			border-radius: 5px;
-			border: 2px solid black;
+			border: 2px solid #f089c9;
+			background: #ffc1ff;
+			color: crimson;
 			h2 {
 				padding: 1em;
 			}

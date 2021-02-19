@@ -37,6 +37,7 @@ body {
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-left: 40em;
 }
 
 #header #nav-bar span a {
@@ -58,7 +59,7 @@ body {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: red;
+  background: crimson;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
@@ -70,7 +71,7 @@ body {
 }
 
 #header #nav-bar span a:hover {
-  color: red;
+  color: crimson;
 }
 
 .container {
@@ -78,6 +79,7 @@ body {
 }
 
 .container .vid {
+  background: #ffc1ff;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -91,6 +93,7 @@ body {
 }
 
 .container #form {
+  background: #f089c9;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -122,6 +125,7 @@ body {
   margin-bottom: 2em;
   font-weight: bold;
   background: transparent;
+  text-transform: uppercase;
 }
 
 .container #form .inputs span {
@@ -168,12 +172,15 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: #b65493;
 }
 
 .container .thingi .box {
   width: 15%;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 2px solid #f089c9;
+  background: #ffc1ff;
+  color: crimson;
 }
 
 .container .thingi .box h2 {
