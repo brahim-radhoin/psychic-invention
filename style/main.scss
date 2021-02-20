@@ -29,35 +29,39 @@ body {
 		display: flex;
 		width: 100%;
 		justify-content: space-around;
-		padding-left: 40em;
-		span {
-			a {
-				font-family: "Titillium Web";
-				text-transform: uppercase;
-				font-weight: 520;
-				font-size: 1.1rem;
-				letter-spacing: 0.15em;
-				display: inline-block;
-				position: relative;
-				color: white;
-				&::after {
-					background: none repeat scroll 0 0 transparent;
-					bottom: 0;
-					content: "";
-					display: block;
-					height: 2px;
-					left: 50%;
-					position: absolute;
-					background: crimson;
-					transition: width 0.3s ease 0s, left 0.3s ease 0s;
-					width: 0;
-				}
-				&:hover::after {
-					width: 100%;
-					left: 0;
-				}
-				&:hover {
-					color: crimson;
+		ul {
+			width: inherit;
+			li {
+				float: right;
+				padding: 0 2em;
+				a {
+					font-family: "Titillium Web";
+					text-transform: uppercase;
+					font-weight: 520;
+					font-size: 1.1rem;
+					letter-spacing: 0.15em;
+					display: inline-block;
+					position: relative;
+					color: white;
+					&::after {
+						background: none repeat scroll 0 0 transparent;
+						bottom: 0;
+						content: "";
+						display: block;
+						height: 2px;
+						left: 50%;
+						position: absolute;
+						background: crimson;
+						transition: width 0.3s ease 0s, left 0.3s ease 0s;
+						width: 0;
+					}
+					&:hover::after {
+						width: 100%;
+						left: 0;
+					}
+					&:hover {
+						color: crimson;
+					}
 				}
 			}
 		}
@@ -69,12 +73,13 @@ body {
 	height: 100vh;
 	scroll-snap-type: y proximity;
 	overflow-y: scroll;
-	div,
+	.vid,
+	.thingi,
 	#form {
 		scroll-snap-align: start;
 	}
 	.vid {
-		background: #ffc1ff;
+		background: #8ab3ca;
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -82,7 +87,8 @@ body {
 		justify-content: space-around;
 	}
 	#form {
-		background: #f089c9;
+		background: url(/bg-images/bg-2.jpg) center;
+		background-size: cover;
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -104,6 +110,7 @@ body {
 				font-weight: bold;
 				background: transparent;
 				text-transform: uppercase;
+				transition: transform 300ms ease-in-out;
 			}
 			span {
 				position: relative;
@@ -127,6 +134,9 @@ body {
 					transform: scaleX(1);
 					transform-origin: left;
 				}
+				&:hover input {
+					outline: 0.15em solid crimson;
+				}
 			}
 		}
 	}
@@ -136,7 +146,7 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		background: #b65493;
+		background: #f4b3b9;
 		.box {
 			width: 15%;
 			border-radius: 5px;
