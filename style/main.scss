@@ -167,7 +167,10 @@ body {
 }
 
 @media all and (max-width: 768px) {
-	.inputs {
-		width: 500px;
+	.container #form .inputs {
+		width: 40%;
+	}
+	.container .thingi {
+		display: flex;
 	}
 }
