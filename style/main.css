@@ -221,4 +221,10 @@ body {
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
+
+@media all and (max-width: 768px) {
+  .inputs {
+    width: 500px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

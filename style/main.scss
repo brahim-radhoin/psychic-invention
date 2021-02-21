@@ -165,3 +165,9 @@ body {
 		}
 	}
 }
+
+@media all and (max-width: 768px) {
+	.inputs {
+		width: 500px;
+	}
+}
