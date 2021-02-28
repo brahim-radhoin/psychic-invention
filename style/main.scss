@@ -43,6 +43,7 @@ body {
 					display: inline-block;
 					position: relative;
 					color: white;
+					letter-spacing: 3px;
 					&::after {
 						background: none repeat scroll 0 0 transparent;
 						bottom: 0;
@@ -98,6 +99,7 @@ body {
 			width: 20%;
 			#submit {
 				cursor: pointer;
+				letter-spacing: 2px;
 			}
 			input {
 				box-sizing: border-box;
@@ -147,14 +149,22 @@ body {
 		align-items: center;
 		justify-content: space-around;
 		background: #f4b3b9;
+		.box-left {
+			margin-left: 15%;
+		}
+		.box-right {
+			margin-right: 15%;
+		}
 		.box {
 			width: 15%;
+			min-height: 45vh;
 			border-radius: 5px;
 			border: 2px solid #f089c9;
 			background: #ffc1ff;
 			color: crimson;
 			h2 {
 				padding: 1em;
+				text-align: center;
 			}
 			p {
 				padding: 1em;
@@ -172,5 +182,10 @@ body {
 	}
 	.container .thingi {
 		display: flex;
+		justify-content: center;
+		.box {
+			width: 25%;
+			margin: 10px;
+		}
 	}
 }

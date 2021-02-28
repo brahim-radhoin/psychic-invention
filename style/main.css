@@ -58,6 +58,7 @@ body {
   display: inline-block;
   position: relative;
   color: white;
+  letter-spacing: 3px;
 }
 
 #header #nav-bar ul li a::after {
@@ -132,6 +133,7 @@ body {
 
 .container #form .inputs #submit {
   cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .container #form .inputs input {
@@ -203,8 +205,17 @@ body {
   background: #f4b3b9;
 }
 
+.container .thingi .box-left {
+  margin-left: 15%;
+}
+
+.container .thingi .box-right {
+  margin-right: 15%;
+}
+
 .container .thingi .box {
   width: 15%;
+  min-height: 45vh;
   border-radius: 5px;
   border: 2px solid #f089c9;
   background: #ffc1ff;
@@ -213,6 +224,7 @@ body {
 
 .container .thingi .box h2 {
   padding: 1em;
+  text-align: center;
 }
 
 .container .thingi .box p {
@@ -230,6 +242,13 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .thingi .box {
+    width: 25%;
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
