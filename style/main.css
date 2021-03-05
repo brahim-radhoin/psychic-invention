@@ -200,6 +200,7 @@ body {
 
   #header {
     position: absolute;
+    position: fixed;
     bottom: 0;
   }
   #header img {
