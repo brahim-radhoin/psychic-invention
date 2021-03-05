@@ -14,6 +14,15 @@ body {
 }
 
 #header {
+	background-color: #999;
+}
+.section-one,
+.section-two,
+.section-three {
+	background-color: #faf8ff;
+}
+
+#header {
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -23,7 +32,7 @@ body {
 	z-index: 2;
 	#header-img {
 		width: 12em;
-		background-color: #d1d1d1;
+		background-color: #faf8ff;
 	}
 	#nav-bar {
 		display: flex;
@@ -52,7 +61,7 @@ body {
 						height: 2px;
 						left: 50%;
 						position: absolute;
-						background: crimson;
+						background: #8685ef;
 						transition: width 0.3s ease 0s, left 0.3s ease 0s;
 						width: 0;
 					}
@@ -61,7 +70,7 @@ body {
 						left: 0;
 					}
 					&:hover {
-						color: crimson;
+						color: #8685ef;
 					}
 				}
 			}
@@ -80,15 +89,16 @@ body {
 		scroll-snap-align: start;
 	}
 	.vid {
-		background: #8ab3ca;
+		// background: #8ab3ca;
 		width: 100%;
 		height: 100vh;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 	}
+
 	#form {
-		background: url(../bg-images/bg-2.jpg) center;
+		// background: url(../bg-images/bg-2.jpg) center;
 		background-size: cover;
 		width: 100%;
 		height: 100vh;
@@ -96,7 +106,7 @@ body {
 		align-items: center;
 		justify-content: space-around;
 		.inputs {
-			width: 20%;
+			width: min(95%, 25rem);
 			#submit {
 				cursor: pointer;
 				letter-spacing: 2px;
@@ -104,7 +114,8 @@ body {
 			input {
 				box-sizing: border-box;
 				border: none;
-				outline: 0.15em solid red;
+				outline: 0.15em solid #8685ef;
+
 				height: 3em;
 				width: 100%;
 				padding: 1em;
@@ -126,7 +137,7 @@ body {
 					height: 100%;
 					top: 0;
 					left: 0;
-					background-color: crimson;
+					background-color: #8685ef;
 					z-index: -1;
 					transform: scaleX(0);
 					transform-origin: right;
@@ -137,18 +148,18 @@ body {
 					transform-origin: left;
 				}
 				&:hover input {
-					outline: 0.15em solid crimson;
+					outline: 0.15em solid #8685ef;
 				}
 			}
 		}
 	}
+
 	.thingi {
 		width: 100%;
 		height: 100vh;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		background: #f4b3b9;
 		.box-left {
 			margin-left: 15%;
 		}
@@ -158,15 +169,15 @@ body {
 		.box {
 			width: 15%;
 			min-height: 45vh;
-			border-radius: 5px;
-			border: 2px solid #f089c9;
-			background: #ffc1ff;
-			color: crimson;
+			border: 0.5px solid #999;
+			background: #b5b2c4;
+			color: #8685ef;
 			h2 {
 				padding: 1em;
 				text-align: center;
 			}
 			p {
+				color: #faf8ff;
 				padding: 1em;
 				padding-bottom: 2em;
 				font-size: 1.125rem;
@@ -176,16 +187,50 @@ body {
 	}
 }
 
-@media all and (max-width: 768px) {
-	.container #form .inputs {
-		width: 40%;
+@media (max-width: 768px) {
+	.container {
+		.thingi {
+			display: flex;
+			justify-content: center;
+			.box {
+				width: 25%;
+				margin: 10px;
+			}
+		}
 	}
-	.container .thingi {
-		display: flex;
-		justify-content: center;
-		.box {
-			width: 25%;
-			margin: 10px;
+}
+
+@media (max-width: 460px) {
+	body {
+		margin-bottom: header(width);
+	}
+	#header {
+		position: absolute;
+		bottom: 0;
+		img {
+			display: none;
+		}
+		#nav-bar {
+			ul {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				li {
+					float: none;
+
+					padding: 0;
+				}
+			}
+		}
+	}
+	.container {
+		.thingi {
+			display: block;
+			.box {
+				width: min(90%);
+				margin: 1rem auto;
+				height: 10px !important;
+			}
 		}
 	}
 }

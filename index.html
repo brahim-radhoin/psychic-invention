@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <!--header start-->
+    <!-- header start -->
     <header id="header">
         <img id="header-img" src="logo/logo-image-file.webp" alt="the site's logo">
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#features">Features</a></li>
-                <li><a class="nav-link" href="#form">Get in touch</a></li>
                 <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+                <li><a class="nav-link" href="#form">Get in touch</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
             </ul>
         </nav>
     </header>
-    <!--header end-->
+    <!-- header end -->
 
     <div class="container">
         <!-- vid start -->
-        <div class="vid" id="features">
+        <div class="vid section-one " id="features">
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/W6qEImEhfY0" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
@@ -30,7 +30,7 @@
         <!-- vid end -->
 
         <!-- inputs start -->
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <form id="form" class="section-two" action="https://www.freecodecamp.com/email-submit">
             <div class="inputs">
                 <input name="email" type="email" id="email" placeholder="enter your e-mail address here" required> <br>
                 <span><input type="submit" id="submit"  value="Get in touch"></span>
@@ -38,8 +38,8 @@
         </form> 
         <!-- inputs start -->
 
-
-        <div class="thingi" id="Pricing"> 
+        <!-- thingi start -->
+        <div class="thingi section-three" id="Pricing"> 
             <div class="box box-left">
                 <h2>basic</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perferendis minus, expedita ipsam laudantium soluta!</p>
@@ -50,10 +50,11 @@
             </div>
             <div class="box box-right">
                 <h2>professional</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta illum earum nemo quaerat aliquid.</p>
+                <p>Lorem ipsum sit amet, consectetur adipisicing. Iste sit amet soluta illum earum nemo quaerat sit amet aliquid.</p>
             </div>
 
         </div>
+        <!-- thingi end -->
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
     </script>
