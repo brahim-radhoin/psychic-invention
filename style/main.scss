@@ -27,7 +27,6 @@ body {
 	width: 100%;
 	align-items: center;
 	position: fixed;
-	background-color: #a1a1a1;
 	min-height: 3em;
 	z-index: 2;
 	#header-img {
@@ -201,11 +200,8 @@ body {
 }
 
 @media (max-width: 460px) {
-	body {
-		margin-bottom: header(width);
-	}
 	#header {
-		position: absolute;
+		// position: absolute;
 		position: fixed;
 		bottom: 0;
 		img {
@@ -218,7 +214,6 @@ body {
 				justify-content: space-around;
 				li {
 					float: none;
-
 					padding: 0;
 				}
 			}
@@ -235,7 +230,9 @@ body {
 			.box {
 				width: min(90%);
 				margin: 1rem auto;
-				height: 10px !important;
+			}
+			.box-right {
+				margin-bottom: 4rem;
 			}
 		}
 	}
