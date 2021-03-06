@@ -9,6 +9,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
 
+// #region [rgba(5,99,777,0.15)]
+// * colores
+
 body {
 	background: #eee;
 }
@@ -21,6 +24,8 @@ body {
 .section-three {
 	background-color: #faf8ff;
 }
+
+// #endregion
 
 #header {
 	display: flex;
@@ -36,12 +41,12 @@ body {
 	#nav-bar {
 		display: flex;
 		width: 100%;
-		justify-content: space-around;
 		ul {
-			width: inherit;
+			width: 100%;
+			justify-content: space-around;
 			li {
 				float: right;
-				padding: 0 2em;
+				padding: 0 min(2rem, 2%);
 				a {
 					font-family: "Titillium Web";
 					text-transform: uppercase;

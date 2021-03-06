@@ -37,14 +37,14 @@ body {
 #header #nav-bar {
   display: flex;
   width: 100%;
-  justify-content: space-around;
 }
 #header #nav-bar ul {
-  width: inherit;
+  width: 100%;
+  justify-content: space-around;
 }
 #header #nav-bar ul li {
   float: right;
-  padding: 0 2em;
+  padding: 0 min(2rem, 2%);
 }
 #header #nav-bar ul li a {
   font-family: "Titillium Web";
