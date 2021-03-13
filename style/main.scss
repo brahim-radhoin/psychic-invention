@@ -9,12 +9,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
 
-// #region [rgba(5,99,777,0.15)]
-// * colores
+$primaryclr: #8685ef;
 
-body {
-	background: #eee;
-}
+// #region [rgba(5,99,777,0.15)]
+// * colors
 
 #header {
 	background-color: #999;
@@ -35,7 +33,7 @@ body {
 	min-height: 3em;
 	z-index: 2;
 	#header-img {
-		width: 12em;
+		width: 9em;
 		background-color: #faf8ff;
 	}
 	#nav-bar {
@@ -51,7 +49,7 @@ body {
 					font-family: "Titillium Web";
 					text-transform: uppercase;
 					font-weight: 520;
-					font-size: 1.1rem;
+					font-size: 0.9rem;
 					letter-spacing: 0.15em;
 					display: inline-block;
 					position: relative;
@@ -65,7 +63,7 @@ body {
 						height: 2px;
 						left: 50%;
 						position: absolute;
-						background: #8685ef;
+						background: $primaryclr;
 						transition: width 0.3s ease 0s, left 0.3s ease 0s;
 						width: 0;
 					}
@@ -74,7 +72,7 @@ body {
 						left: 0;
 					}
 					&:hover {
-						color: #8685ef;
+						color: $primaryclr;
 					}
 				}
 			}
@@ -93,7 +91,6 @@ body {
 		scroll-snap-align: start;
 	}
 	.vid {
-		// background: #8ab3ca;
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -102,7 +99,6 @@ body {
 	}
 
 	#form {
-		// background: url(../bg-images/bg-2.jpg) center;
 		background-size: cover;
 		width: 100%;
 		height: 100vh;
@@ -118,8 +114,7 @@ body {
 			input {
 				box-sizing: border-box;
 				border: none;
-				outline: 0.15em solid #8685ef;
-
+				outline: 0.13em solid $primaryclr;
 				height: 3em;
 				width: 100%;
 				padding: 1em;
@@ -128,12 +123,14 @@ body {
 				background: transparent;
 				text-transform: uppercase;
 				transition: transform 300ms ease-in-out;
+				transition: 300ms ease-in-out;
 			}
 			span {
 				position: relative;
 				z-index: 0;
 				display: block;
 				height: 2.5em;
+
 				&::after {
 					content: "";
 					position: absolute;
@@ -141,18 +138,20 @@ body {
 					height: 100%;
 					top: 0;
 					left: 0;
-					background-color: #8685ef;
+					background-color: $primaryclr;
 					z-index: -1;
 					transform: scaleX(0);
 					transform-origin: right;
 					transition: transform 300ms ease-in-out;
+					transition: 300ms ease-in-out;
 				}
 				&:hover::after {
 					transform: scaleX(1);
 					transform-origin: left;
 				}
 				&:hover input {
-					outline: 0.15em solid #8685ef;
+					outline: 0.13em solid $primaryclr;
+					color: #faf8ff;
 				}
 			}
 		}
@@ -175,7 +174,7 @@ body {
 			min-height: 45vh;
 			border: 0.5px solid #999;
 			background: #b5b2c4;
-			color: #8685ef;
+			color: $primaryclr;
 			h2 {
 				padding: 1em;
 				text-align: center;

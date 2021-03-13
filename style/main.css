@@ -8,10 +8,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background: #eee;
-}
-
 #header {
   background-color: #999;
 }
@@ -31,7 +27,7 @@ body {
   z-index: 2;
 }
 #header #header-img {
-  width: 12em;
+  width: 9em;
   background-color: #faf8ff;
 }
 #header #nav-bar {
@@ -50,7 +46,7 @@ body {
   font-family: "Titillium Web";
   text-transform: uppercase;
   font-weight: 520;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.15em;
   display: inline-block;
   position: relative;
@@ -114,7 +110,7 @@ body {
 .container #form .inputs input {
   box-sizing: border-box;
   border: none;
-  outline: 0.15em solid #8685ef;
+  outline: 0.13em solid #8685ef;
   height: 3em;
   width: 100%;
   padding: 1em;
@@ -123,6 +119,7 @@ body {
   background: transparent;
   text-transform: uppercase;
   transition: transform 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .container #form .inputs span {
   position: relative;
@@ -142,13 +139,15 @@ body {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .container #form .inputs span:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 .container #form .inputs span:hover input {
-  outline: 0.15em solid #8685ef;
+  outline: 0.13em solid #8685ef;
+  color: #faf8ff;
 }
 .container .thingi {
   width: 100%;
