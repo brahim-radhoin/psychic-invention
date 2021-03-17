@@ -178,6 +178,7 @@ $white: #e8f3f1;
 			color: $--clr-1;
 			h2 {
 				padding: 1em;
+				font-size: max(2vw, 1.2rem);
 				text-align: center;
 			}
 			p {
@@ -206,7 +207,6 @@ $white: #e8f3f1;
 
 @media (max-width: 460px) {
 	#header {
-		// position: absolute;
 		position: fixed;
 		bottom: 0;
 		img {
@@ -218,7 +218,6 @@ $white: #e8f3f1;
 				display: flex;
 				justify-content: space-around;
 				li {
-					float: none;
 					padding: 0;
 				}
 			}
